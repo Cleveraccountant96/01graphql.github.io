@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile | 01 Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../pages/styles.css" />
+
+</head>
+<body>
+
+  <header>
+    <button id="logout">Logout</button>
+  </header>
+
+  <main>
+    
+    <section id="user-info">
+      <h1 id="name"></h1>
+      <p id="login"></p>
+      <p id="campus"></p>
+      <p id="level"></p>
+    </section>
+
+    <section>
+      <h2>XP Over Time</h2>
+      <svg
+        id="xp-graph"
+        viewBox="0 0 600 300"
+        width="600"
+        height="300"
+      ></svg>
+    </section>
+
+    <section>
+      <h2>Skills Distribution</h2>
+      <svg
+        id="skills-graph"
+        viewBox="0 0 600 300"
+        width="600"
+        height="300"
+      ></svg>
+    </section>
+
+    <section>
+      <h2>Skills Pie Chart (Optional)</h2>
+      <svg
+      id="skills-pie"
+      viewBox="0 0 300 300"
+      width="300"
+      height="300"
+      ></svg>
+    </section>
+
+  </main>
+
+  <!-- Profile logic -->
+  <script type="module" src="../scripts/profile.js"></script>
+</body>
+</html>
